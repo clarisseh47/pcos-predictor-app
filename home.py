@@ -7,5 +7,6 @@ st.write(
 st.write(
     "By Risha and Reha"
 )
-#comment 
+st.sidebar.title("Background")
+option = st.sidebar.selectbox("select",["Background"])
 
