@@ -1,6 +1,8 @@
 import streamlit as st
 import background
 import screening
+import resources 
+import about_us
 
 def display_home():
     st.title("PCOS Predictor")
@@ -12,7 +14,7 @@ def display_home():
     )
 
 st.sidebar.title("Menu")
-option = st.sidebar.selectbox("select a page",['Home',"Background","Screening Quiz"])
+option = st.sidebar.selectbox("select a page",['Home',"Background","Screening Quiz","Treatments + Resources","About Us"])
 
 if option == "Home":
     display_home()
@@ -20,3 +22,7 @@ elif option == "Background":
     background.display_page()
 elif option == "Screening Quiz":
     screening.display_page()
+elif option == "Treatments + Resources":
+    resources.display_page()
+elif option == "About Us":
+    about_us.display_page()

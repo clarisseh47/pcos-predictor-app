@@ -21,7 +21,14 @@ def display_page():
     hirsutism_input = 0.0 
     if hirsutism == "Yes":
         hirsutism_input = 1.0
-    
+    AcneSeverity = st.radio('How would you describe your acne severity?',["No acne", "Mild", "Moderate", "Severe"])
+    FamilyHistoryofPCOS = st.radio('Have any of your blood relatives been diagnosed with PCOS before?',["No", "Yes"])
+    InsulinResistance = st.radio('Do you have insluin resistance?',["No", "Yes"])
+    StressLevels = st.radio('What is your stresslevel?',["Low","Medium","High"])
+    UrbanRural = st.radio('Do you live in a urban or rural area?',["Urban","Rural"])
+    SocioeconomicStatus = st.radio('What is your socioeconomic status?',["Low","Middle","High"])
+    FertilityConcerns = st.radio('Do you have fertility concern?',["No","Yes"])
+    Ethnicity = st.radio('What is your ethnicity?',["African", "Asian", "Caucasian", "Hispanic", "Other"])
     
 
 
