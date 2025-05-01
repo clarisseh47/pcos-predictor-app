@@ -30,7 +30,7 @@ elif option == "Background":
     background.display_page()
 elif option == "Screening Quiz":
     screening.display_page()
-elif option == "Treatments + Resources":
+elif option == "Resources":
     resources.display_page()
 elif option == "About Us":
     about_us.display_page()
